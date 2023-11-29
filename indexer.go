@@ -15,11 +15,9 @@ import (
 )
 
 func indexer(mongoCollectionName string,elasticsearchIndexName string) {
-	fmt.Print(mongoCollectionName)
-	fmt.Print(elasticsearchIndexName)
-	if err := godotenv.Load(); err != nil {
-		fmt.Printf("Error loading .env file: %v", err)
-	}
+	fmt.Printf(mongoCollectionName)
+	fmt.Printf(elasticsearchIndexName)
+	
 
 	mongoDBURI := "mongodb://localhost:27017"
 	mongoDBName := "testDb5"
